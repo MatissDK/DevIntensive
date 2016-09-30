@@ -11,6 +11,7 @@ import android.widget.EditText;
 import com.softdesign.devintensive.R;
 import com.softdesign.devintensive.utils.ConstantManager;
 
+
 public class MainActivity extends Activity implements View.OnClickListener {
 
     public static final String TAG = ConstantManager.TAG_PREFIX + "Main Activity";
@@ -39,7 +40,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         } else {
             //activity is already created
-
             mColorMode = savedInstanceState.getInt(ConstantManager.COLOR_MODE_KEY);
             if (mColorMode == Color.RED) {
                 mEditText.setBackgroundColor(Color.RED);
@@ -48,6 +48,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 mEditText.setBackgroundColor(Color.GREEN);
             }
         }
+
+
+
     }
 
     @Override
